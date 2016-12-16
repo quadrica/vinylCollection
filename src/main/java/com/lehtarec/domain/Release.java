@@ -1,23 +1,36 @@
 package com.lehtarec.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
 /**
  * Created by PENGUIN on 21.11.2016.
  */
+@Entity
 public class Release {
-    private long id;
-    private String title, artist;
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Long id;
+    private String title, artist, imgurl;
 
-    public Release(long id, String title, String artist) {
-        this.id = id;
+    public Release()
+    {}
+    
+    public Release(String title, String artist, String imgurl) {
+        super();
         this.title = title;
         this.artist = artist;
+        this.imgurl = imgurl;
     }
 
-    public long getId() {
+	public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -25,7 +38,7 @@ public class Release {
         return title;
     }
 
-    public void setTitle(String firstName) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
@@ -36,6 +49,14 @@ public class Release {
     public void setArtist(String artist) {
         this.artist = artist;
     }
+    
+    public String getImgurl() {
+        return imgurl;
+    }
+    public void setImgurl(String imgurl) {
+        this.imgurl = imgurl;
+    }
+    
 
     @Override
     public String toString() {
