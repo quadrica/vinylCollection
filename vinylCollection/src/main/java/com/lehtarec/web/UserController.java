@@ -22,13 +22,15 @@ import javax.validation.Valid;
 public class UserController {
     @Autowired
     private UserRepository userRepository;
-
+    
+    //add new user
     @RequestMapping(value = "signup")
     public String addUser(Model model) {
         model.addAttribute("signupform", new SignupForm());
         return "signup";
     }
-
+    
+    //save user
     @RequestMapping(value = "saveuser", method = RequestMethod.POST)
     public String save(@Valid @ModelAttribute("signupform") SignupForm signupForm, BindingResult bindingResult) {
         if (!bindingResult.hasErrors()) { // validation errors

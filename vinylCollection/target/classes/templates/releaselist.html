@@ -33,6 +33,9 @@
 			
 			<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/delete/{id}(id=${release.id})}" class="btn btn-danger">Delete</a></td>
     	</tr>
-     </table>  	
+     </table>
+     <form th:action="@{/addrelease}" method="post">
+			<input type="submit" value="Add release" class="btn btn-primary"/>
+		</form>  	
 </body>
 </html>

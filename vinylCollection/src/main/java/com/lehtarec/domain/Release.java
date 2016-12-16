@@ -26,7 +26,7 @@ public class Release {
         this.imgurl = imgurl;
     }
 
-    public Long getId() {
+	public Long getId() {
         return id;
     }
 
@@ -38,7 +38,7 @@ public class Release {
         return title;
     }
 
-    public void setTitle(String firstName) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
