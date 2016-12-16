@@ -40,6 +40,10 @@ public class VinylCollectionApplication {
 			jdbcTemplate.update("insert into VC_Release(title, artist, imgurl) values (?, ?, ?)", "Goodbye country (Hello nightclub)", "Groove Armada", "https://img.discogs.com/NkcDaIfaTET7UC5lb6Ho0uwIvow=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-697346-1247777129.jpeg.jpg");
 			jdbcTemplate.update("insert into VC_Release(title, artist, imgurl) values (?, ?, ?)", "The man with the red face", "Laurent Garnier", "https://img.discogs.com/lWIckD0nkdzcMl1We_cPKSJDzt8=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-694-1447722482-9902.jpeg.jpg");
 			jdbcTemplate.update("insert into VC_Release(title, artist, imgurl) values (?, ?, ?)", "Mondo Beyondo", "Ursula 1000", "https://img.discogs.com/u7lzJP435vCluLE0Y3vc-aUuVXk=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3059773-1313820672.jpeg.jpg");
+			jdbcTemplate.update("insert into VC_Release(title, artist, imgurl) values (?, ?, ?)", "Prophesy", "Nitin Sawhney", "https://img.discogs.com/JcHln0K1gSI0dCnjrs_vWaLZBAs=/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-13838-1237469994.jpeg.jpg");
+			jdbcTemplate.update("insert into VC_Release(title, artist, imgurl) values (?, ?, ?)", "Welcome Oblivion", "How to Destroy Angels", "https://img.discogs.com/Ik9KaE1oG5Wxw7GxosvNosqOP5s=/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4337190-1446779828-7089.jpeg.jpg");
+			jdbcTemplate.update("insert into VC_Release(title, artist, imgurl) values (?, ?, ?)", "Tropicalia", "Blue Six", "https://img.discogs.com/jqx37zSrp9TwPVpTI2SkTyM8Ux8=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-878157-1221218229.jpeg.jpg");
+			
 			*/
 		};
 	}

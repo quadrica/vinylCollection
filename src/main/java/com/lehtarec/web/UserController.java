@@ -38,7 +38,7 @@ public class UserController {
                 String pwd = signupForm.getPassword();
                 BCryptPasswordEncoder bc = new BCryptPasswordEncoder();
                 String hashPwd = bc.encode(pwd);
-
+                //TODO default role for user is saving "USER"
                 User newUser = new User();
                 newUser.setPasswordHash(hashPwd);
                 newUser.setUsername(signupForm.getUsername());
